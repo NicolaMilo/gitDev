@@ -5,7 +5,7 @@ class Convertitore
     static void Main()
     {
         Console.WriteLine("*La funzione al momento non è disponibile");
-        Console.Write("1) Decimale - Binario\n2) Decimale - Esadecimale\n3) Decimale - Ottale\n4) Binario - Decimale\n5) Esadecimale - Decimale\n6) Ottale - Decimale\nNumero: ");
+        Console.Write("1) Decimale - Binario(*)\n2) Decimale - Esadecimale\n3) Decimale - Ottale\n4) Binario - Decimale\n5) Esadecimale - Decimale\n6) Ottale - Decimale\nNumero: ");
         string scelta = Console.ReadLine();
 
         switch (scelta)
@@ -56,7 +56,7 @@ class Convertitore
             Console.WriteLine("An error has occured, retry!");
             decBin();
         }
-        Console.WriteLine("Il valore " + intValue + " in binario è " + Convert.ToString(intValue, 2));
+        //Console.WriteLine("Il valore " + intValue + " in binario è " + Convert.ToString(intValue, 2));
     }
 
     static void decHex()
